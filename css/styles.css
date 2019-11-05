@@ -1,0 +1,222 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	padding: 0 3%;
+	}
+h1{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin: 1rem 0;
+	}
+p{
+	margin: 0 0 .5rem 0;
+	}
+#anim_frame{
+	background-color:#09c;
+	width: 500px;
+	height: 300px;
+	overflow:hidden;
+	border: solid #000 1px;
+	float: left;
+	margin: 0 10px 10px 0;
+	background-image: url(../img/floor.jpg);
+}
+#anim-words{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.25rem;
+	font-weight: bold;
+	position: relative;
+	top: -25px;
+	left: 50px;
+	animation: changeWords 3s linear 0s
+	forwards;
+}
+
+@keyframes changeWords {
+  0% {
+
+  }
+	20%{
+		top:95px;
+		left: 120px;
+		opacity:1;
+	}
+	40%{
+		top:95px;
+		left: 120px;
+		opacity:1;
+	}
+100%{
+	opacity:0;
+	top:95px;
+	left: 120px;
+  }
+}/*END changeWords */
+
+#anim-words1{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.25rem;
+	font-weight: bold;
+	position: relative;
+	top: 85px;
+	left: 100px;
+	animation: changeWords1 7s linear 1.5s
+	forwards;
+	opacity:0;
+}
+@keyframes changeWords1 {
+  0% {
+
+  }
+	20%{
+		top:85px;
+		left: 140px;
+		opacity:0;
+	}
+	30%{
+		font-size: 1.5rem;
+		top:95px;
+		left: 140px;
+		opacity:1;
+	}
+	50%{
+		font-size: 1.5rem;
+		top:95px;
+		left: 140px;
+		opacity:1;
+	}
+	62%{
+		font-size: 1.5rem;
+		top:95px;
+		left: 140px;
+		opacity:1;
+	}
+	63.5%{
+		font-size: 1.5rem;
+		top:95px;
+		left: 140px;
+		opacity:0;
+	}
+	72%{
+		font-size: 1.5rem;
+		top:95px;
+		left: 140px;
+		opacity:0;
+	}
+100%{
+	font-size: 1.5rem;
+	opacity:0;
+	top:95px;
+	left: 140px;
+  }
+}/*END changeWords1 */
+
+#anim-words2{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.1rem;
+	font-weight: bold;
+	position: relative;
+	top: 210px;
+	left: 20px;
+	animation: changeWords2 7s ease 5s
+	forwards;
+	opacity:0;
+}
+@keyframes changeWords2 {
+	0%{
+		opacity:0;
+	}
+	70%{
+		opacity: 1;
+	}
+	100%{
+		opacity:0;
+	}
+}
+/*END changeWords2 */
+
+#roomba{
+	position: relative;
+	top: 100px;
+	left: -500px;
+	animation: roomba-anim 10s ease 2s forwards;
+	z-index:1;
+}
+@keyframes roomba-anim {
+	0%{
+		top: 100px;
+		left: -400px;
+	}
+	20%{
+		top: 100px;
+		left: -300px;
+	}
+	80%{
+		top: -25px;
+		left: 300px;
+		transform: rotate(-40deg);
+	}
+	100%{
+		top: -50px;
+		left: 300px;
+		transform: rotate(-50deg);
+	}
+}/* END roomba-anim */
+#logo{
+	width:50%;
+	position:relative;
+	top: -315px;
+	left: 30px;
+	opacity:0;
+	animation: logo-anim 10s ease 5s
+	forwards;
+}
+@keyframes logo-anim {
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+}/* END logo-anim */
+#dirt{
+	width:25%;
+	position:absolute;
+	top: 85px;
+	left: 130px;
+	transform:rotate(96deg);
+	opacity:1;
+	animation: dirt-anim .5s linear 5.8s
+	forwards;
+}
+@keyframes dirt-anim {
+	0%{
+		opacity:1;
+	}
+
+	100%{
+		opacity:0;
+	}
+}/* END dirt-anim */
+#buy{
+	width:25%;
+	position:relative;
+	top: -270px;
+	left: -170px;
+	opacity:0;
+	animation: buy 2s ease 10s
+	forwards;
+}
+@keyframes buy {
+	0%{
+		opacity:0;
+	}
+	70%{
+		opacity: 1;
+	}
+	100%{
+		opacity:1;
+	}
+}
